@@ -8,12 +8,18 @@
   <body>
     <sp-theme scale="large" color="dark">
       <sp-popover open style="position: relative">
-        <sp-menu>
+        <sp-action-menu>
           <sp-menu-item value="item-1">Deselect</sp-menu-item>
           <sp-menu-item value="item-2">Select inverse</sp-menu-item>
           <sp-menu-item value="item-3">Feather...</sp-menu-item>
           <sp-menu-item value="item-4">Select and mask...</sp-menu-item>
           <sp-menu-item value="item-5">Save selection</sp-menu-item>
+          <sp-menu-group>
+            <sp-menu-item value="item-2">Select inverse</sp-menu-item>
+            <sp-menu-item value="item-3">Feather...</sp-menu-item>
+            <sp-menu-item value="item-4">Select and mask...</sp-menu-item>
+            <sp-menu-item value="item-5">Save selection</sp-menu-item>
+          </sp-menu-group>
           <sp-menu-item>
             Item with submenu
             <div slot="submenu">
@@ -76,7 +82,7 @@
               <sp-menu-item value="item-5">Save selection</sp-menu-item>
             </div>
           </sp-menu-item>
-        </sp-menu>
+        </sp-action-menu>
       </sp-popover>
     </sp-theme>
   </body>
